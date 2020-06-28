@@ -11,33 +11,27 @@
         android:id="@+id/shot_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="304dp"
         android:onClick="onShot"
         android:text="Shot"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/miss_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="296dp"
-        android:layout_marginEnd="40dp"
-        android:onClick="onMiss"
-        android:text="Miss"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
 
     <Button
         android:id="@+id/round_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
         android:onClick="onRound"
         android:text="Round"
-        app:layout_constraintEnd_toStartOf="@+id/miss_btn"
-        app:layout_constraintStart_toEndOf="@+id/shot_btn"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintBottom_toTopOf="@+id/shot_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
